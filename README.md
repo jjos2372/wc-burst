@@ -6,7 +6,7 @@ It is probably one of the most used e-commerce platforms.
 
 This project consists in a simple and powerful checkout solution for WooCommerce to receive in [BURST](https://www.burst-coin.org/) with zero fee. **No registration required**, you just need a Burst wallet address.
 
-[![Demo video](http://img.youtube.com/vi/XcN5WxqjjGw/0.jpg)](https://www.youtube.com/watch?v=XcN5WxqjjGw "Demo video")
+[![Demo video](http://img.youtube.com/vi/hV-dxjhdb90/0.jpg)](https://www.youtube.com/watch?v=hV-dxjhdb90 "Demo video")
 
 Payment values are converted from your configured FIAT currency to BURST using [Coingecko](https://www.coingecko.com/) API.
 Buyers should transfer BURST directly to your Burst address: your wallet, your funds.
