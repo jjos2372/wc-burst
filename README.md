@@ -10,8 +10,8 @@ than anything else.
 This project consists in a simple and powerful checkout solution for [WooCommerce](https://woocommerce.com)
 to receive in [BURST](https://www.burst-coin.org/) with **zero additional fees**.
 **No registration is required**, you just need a Burst wallet address.
-**No charge back**, blockchain operations are ireversible and immutable.
-There is also an option for **instant payments**, recommended for small payments (e.g. a cup of coffe) with a small risk
+**No charge back**, blockchain operations are irreversible and immutable.
+There is also an option for **instant payments**, recommended for small payments (e.g. a cup of cooffe) with a small risk
 (accepting unconfirmed transactions).
 
 [WooCommerce](https://woocommerce.com) claims to have more than 70 million downloads and to power over 28% of all online stores.
