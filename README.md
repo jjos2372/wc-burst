@@ -30,7 +30,7 @@ Then the buyer transfer to your Burst wallet this BURST amount.
 
 ## Installation
 
-Download the zip file available in the [releases section](releases) and then upload it as a plugin in your
+Download the zip file available in the [releases section](../../releases) and then upload it as a plugin in your
 WordPress admin page.
 
 ### Requirements
