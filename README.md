@@ -43,8 +43,8 @@ Then the buyer transfer to your Burst wallet this BURST amount.
 ## Installation
 
 Download (or clone) this repository.
-Then move the contents to your WordPress folder underthe zip file available in the [releases section](../../releases) and then upload it as a plugin in your
-WordPress admin page.
+Then move the contents to your WordPress folder under folder `wp-content/plugins`.
+Finally, enable the plugin and configure the parameters under your WordPress admin page.
 
 ### Requirements
 
@@ -53,6 +53,7 @@ Tested with WordPress 5.5.2 and WooCommerce 3.6.5.
 ## License
 
 This code is licensed under [GPLv3](LICENSE).
+This project also includes code from the [PHP QR Code library](http://phpqrcode.sourceforge.net/).
 
 ## Author
 
