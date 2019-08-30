@@ -372,7 +372,7 @@ function woocommerce_burst_init() {
                     $nqt_value = substr($note->comment_content, 10);
 
                     $png_file = 'tmp/' .$nqt_value.'.png';
-                    $url = 'burst://requestBurst&receiver='.$this->get_option( 'burstid' )
+                    $url = 'burst://requestBurst?receiver='.$this->get_option( 'burstid' )
                         . '&amountNQT=' . $nqt_value . '&feeNQT=2000000&immutable=true';
                     QRcode::png($url, plugin_dir_path( __FILE__ ) . $png_file, QR_ECLEVEL_L, 3); 
 
