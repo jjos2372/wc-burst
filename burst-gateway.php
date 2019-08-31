@@ -361,8 +361,8 @@ function woocommerce_burst_init() {
 		public function thankyou_page( $order_id ) {
             $order = wc_get_order( $order_id );
             
-            // schedule the check for payment event in the next 60 seconds
-            wp_schedule_single_event( time() + 60, 'woocommerce_burst_event', array($this));
+            // schedule the check for payment event in the next 30 seconds
+            wp_schedule_single_event( time() + 30, 'woocommerce_burst_event', array($this));
 			
             $notes = $order->get_customer_order_notes();
 
@@ -407,8 +407,6 @@ function woocommerce_burst_init() {
 
     if (!class_exists('WC_Payment_Gateway'))
         return;
-
-    DEFINE('PLUGIN_DIR', plugins_url(basename(plugin_dir_path(__FILE__)), basename(__FILE__)) . '/');
 
     /**
     * Add the gateway to woocommerce
