@@ -1,9 +1,9 @@
-# wc-burst: WooCommerce (WordPress) BURST payments
+# WooCommerce (WordPress) BURST payments - wc-burst
 [![GPLv3](https://img.shields.io/badge/license-GPLv3-blue.svg)](LICENSE)
 
-There are many platforms for e-commerce cryptocurrency payments these days.
+There are many alternatives for cryptocurrency payments these days.
 However, the way they are implemented hurt many important principles:
-you need to create an account, they hold your funds, etc.
+you need to create an account, manage API keys, they hold your funds, etc.
 Actually, most systems are more alike exchanges or classical credit card payment companies
 than anything else.
 
@@ -11,7 +11,7 @@ This project consists in a simple and powerful checkout solution for [WooCommerc
 to receive in [BURST](https://www.burst-coin.org/) with **zero additional fees**.
 **No registration is required**, you just need a Burst wallet address.
 **No charge back**, blockchain operations are irreversible and immutable.
-There is also an option for **instant payments**, recommended for small payments (e.g. a cup of cooffe) with a small risk
+There is also an option for **instant payments**, recommended for small payments (e.g. a cup of coffee) with a small risk
 (accepting unconfirmed transactions).
 
 [WooCommerce](https://woocommerce.com) claims to have more than 70 million downloads and to power over 28% of all online stores.
