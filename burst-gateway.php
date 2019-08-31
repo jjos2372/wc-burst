@@ -144,7 +144,7 @@ function woocommerce_burst_init() {
                 $this->$key = $val;
 
 			// Load plugin checkout icon
-            $this->icon = PLUGIN_DIR . 'burst-icon.png';
+            $this->icon = plugin_dir_url( __FILE__ ) . 'burst-icon.png';
 
             // Add hooks
             add_action('woocommerce_receipt_burst',                            array($this, 'receipt_page'));
@@ -209,7 +209,7 @@ function woocommerce_burst_init() {
                 'bursthold'     => array(
                     'title'       => __('Burst hold duration in minutes', 'burst'),
                     'type'        => 'text',
-                    'description' => __('The number of minutes orders are held open, waiting for BURST transfer.<br>After the held period the order is automatically canceled.', 'burst'),
+                    'description' => __('The number of minutes orders are held open, waiting for BURST transfer.<br>After the held period the order is automatically cancelled.', 'burst'),
                     'default'     => '30'
                 ),
 				'maxamountforzeroconf'   => array(
@@ -379,7 +379,7 @@ function woocommerce_burst_init() {
                     $htmlOutput = '<h2>BURST payment pending</h2>';
 
                     $htmlOutput .= '<p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received">'.
-                    'Now you just need to transfer the amount within <strong>'. $this->get_option( 'bursthold' ) .' minutes</strong>, otherwise the order is automatically canceled.</p>';
+                    'Now you just need to transfer the amount within <strong>'. $this->get_option( 'bursthold' ) .' minutes</strong>, otherwise the order is automatically cancelled.</p>';
 
                     $htmlOutput .= '<ul class="woocommerce-order-overview woocommerce-thankyou-order-details order_details">';
 
