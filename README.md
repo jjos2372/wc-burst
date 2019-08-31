@@ -16,7 +16,11 @@ There is also an option for **instant payments**, recommended for small payments
 
 [WooCommerce](https://woocommerce.com) claims to have more than 70 million downloads and to power over 28% of all online stores.
 It is probably one of the most used e-commerce platforms.
-In the video below this BURST payment system is demonstrated.
+
+![](video-short.gif)
+
+In the video below this WooCommerce BURST payment system is explained in more details, including how to use it
+as well as how to configure it.
 
 [![Demo video](http://img.youtube.com/vi/hV-dxjhdb90/0.jpg)](https://www.youtube.com/watch?v=hV-dxjhdb90 "Demo video")
 
