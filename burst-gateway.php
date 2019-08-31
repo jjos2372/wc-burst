@@ -216,7 +216,7 @@ function woocommerce_burst_init() {
                     'title'       => __('Maximum amount accepted with zero confirmation', 'burst'),
                     'type'        => 'text',
                     'label'       => __('Maximum amount accepted with zero confirmation', 'burst'),
-                    'description' => __('This sets the maximum order amount (in your FIAT currency) were zero confimation payments are accepted (pending in mempool are accepted). By default, no payment is accepted with zero confirmations, but you can relax that with this option for small amount payments (like for a cup of coffee).', 'burst'),
+                    'description' => __('This sets the maximum order amount (in your FIAT currency, '. get_woocommerce_currency() .') were zero confimation payments are accepted (pending in mempool are accepted). By default, no payment is accepted with zero confirmations, but you can relax that with this option for small amount payments (like for a cup of coffee).', 'burst'),
                     'default'     => '0'
                 ),
 				'numberofconfirmations'   => array(
@@ -276,7 +276,7 @@ function woocommerce_burst_init() {
 <p>
 	<?php echo __(
         'A simple and powerful checkout solution for WooCommerce to receive in BURST with <b>no additional fees and no registration</b>, you just need a Burst wallet address.<br><br>
-        Payment values are converted from your configured FIAT currency to BURST using <a target="_blank" href="https://www.coingecko.com">Coingecko API</a>.
+        Payment values are converted from your configured FIAT currency ('. get_woocommerce_currency() .') to BURST using <a target="_blank" href="https://www.coingecko.com">Coingecko API</a>.
         Different payment options are shown to the buyer (QR code, link, or address to transfer BURST) in the checkout page.
         You can configure the plugin to accept small values with zero confirmations (instantaneous payment).
         The number of confirmations (blocks) to accept general payments is also configurable.
