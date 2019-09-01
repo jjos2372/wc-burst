@@ -29,9 +29,14 @@ Buyers should transfer BURST directly to your Burst address: your wallet, your f
 There is no third party holding your funds.
 
 Different payment options are shown to the buyer (QR code, link, or address to transfer BURST) in the checkout page.
-You can configure the plugin to accept small values with zero confirmations (instantaneous payment).
+You can configure the plugin to accept instant payments (accepting unconfirmed transactions).
 The number of confirmations (blocks) to accept general payments is also configurable.
-Payments are set as on-hold, a cron service check for the confirmation of on-hold payments and then set them as paid after the number of confirmations.
+
+The system works as follows. When a buyer select to pay in BURST, the order is set as on-hold and the user is asked
+to transfer a given BURST amount to the store address.
+A background service is scheduled to check for these on-hold payments every 30 seconds.
+If the payment is found on Burst blockchain (and has already the number of confirmations) the order is set as paid.
+Unpaid orders are cancelled after a specified number of minutes, also by the same background service.
 
 ## FIAT Currencies supported
 
@@ -47,8 +52,8 @@ Then the buyer transfer to your Burst wallet this BURST amount.
 ## Installation
 
 Download (or clone) this repository.
-Then move the contents to your WordPress folder under folder `wp-content/plugins`.
-Finally, enable the plugin and configure the parameters under your WordPress admin page.
+Then move the contents to your WordPress plugins folder `wp-content/plugins`.
+Finally, enable the plugin and configure the parameters using your WordPress admin page.
 
 ### Requirements
 
